@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
 # Ordering-Books-on-a-Shelf
 Artificial Intelligence Assignment 
 Ordering Books on a Shelf
@@ -32,4 +23,4 @@ bellow the form a place that answer is shown
 bellow the form say error or some thing nice when the numbers are invalid
 open another window to show the permutation table (board)
 the solution number should be in different color comparing the other colors
->>>>>>> 558522bae2aa7bd55a64a4bb8b107bb2ada09b21
+
