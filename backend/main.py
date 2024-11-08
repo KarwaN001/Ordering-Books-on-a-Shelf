@@ -43,6 +43,8 @@ async def calculate(data: dict):
         "dp_table": dp_table
     }
 
+
+
 def calculate_permutation(n: int, r: int):
     if r > n:
         return 0, []

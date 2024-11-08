@@ -1,11 +1,12 @@
 //run command : npm run dev
 
-
 import { useState } from 'react';
 import { Book, Users, ArrowRight, Moon, Sun, Table2 } from 'lucide-react';
 import './App.css';
 
 function App() {
+
+  
   const [totalBooks, setTotalBooks] = useState('');
   const [groupSize, setGroupSize] = useState('');
   const [result, setResult] = useState(null);
@@ -13,6 +14,7 @@ function App() {
   const [dpTable, setDpTable] = useState([]);
   const [loading, setLoading] = useState(false);
   const [isDark, setIsDark] = useState(true);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,6 +49,7 @@ function App() {
       setLoading(false);
     }
   };
+
 
   return (
     <div className={`app ${isDark ? 'dark' : 'light'}`}>
@@ -120,6 +123,7 @@ function App() {
               )}
             </button>
           </form>
+          
 
           {error && (
             <div className="error-message">
@@ -127,12 +131,16 @@ function App() {
             </div>
           )}
 
+
+
           {result !== null && (
             <div className="result-card">
               <h3>Results</h3>
-              <div className="result-content">
-                <span className="result-label">Possible Arrangements:</span>
-                <span className="result-value">{result.toLocaleString()}</span>
+              <div className="result-content" style={{maxHeight: '100px', overflowY: 'auto'}}>
+                <div style={{display: 'flex', alignItems: 'center', whiteSpace: 'nowrap' }}>
+                  <span className="result-label" style={{marginRight: '10px'}}>Possible Arrangements:</span>
+                  <span className="result-value">{result.toLocaleString()}</span>
+                </div>
               </div>
             </div>
           )}

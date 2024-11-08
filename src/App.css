@@ -78,6 +78,7 @@ body {
   border: none;
   cursor: pointer;
   transition: all var(--transition-base);
+  /* animation: spin 5s linear infinite; */
 }
 
 .theme-toggle:hover {
